@@ -1,0 +1,176 @@
+ 
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;   
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.outlet{ 
+    padding: 10px;
+    border-radius: 10px;     
+    margin: 5px;
+}
+
+form{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+label{
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+input{
+    width: 95%;
+    margin-top: 3px;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+.iniciar{
+    margin-top: 15px;
+    background-color: rgb(49, 49, 231);
+    color: white;
+    width:100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.consulta-div{
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.consulta-p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 20px;
+}
+
+.previewConsulta-div{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.previewConsulta-p{
+    flex: 1 1 0%;
+    
+}
+.obtener-consulta-div{
+     
+    justify-content: space-between;
+}
+.obtener-consulta-h2{
+   font-family: 'Times New Roman', Times, serif;
+
+}
+
+.obtener-consulta-p-label{
+   font-size: 20px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.obtener-consulta-p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(48, 48, 49);
+}
+.obtener-consulta-div-mix{
+    width: 50%;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgb(206, 203, 203);
+    border-radius: 8px;
+    border: 1px solid rgb(77, 76, 76);
+}
+
+.linckNav{
+    margin-top: 15px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+
+.error{
+    background-color:rgb(228, 33, 33);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(250, 61, 118);
+    border-radius: 5px;
+}
+
+.aler{
+    background-color: rgb(59, 78, 163);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+@media (min-width: 400px) {
+    .container {
+        max-width: 70%;
+        margin-top: 50px
+    }
+}
+
+ 
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 60%;
+        margin-top: 80px
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 45%;
+        margin-top: 80px
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 40%;
+        margin-top: 80px
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 35%;
+        margin-top: 80px
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+        margin-top: 80px
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 80px;
+        justify-content: center;
+    }
+}

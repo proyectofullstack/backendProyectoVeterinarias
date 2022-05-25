@@ -1,0 +1,22 @@
+
+.outlet-consulta{
+    width: 100%;
+    padding:0 30px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo-consulta{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+
+@media (min-width: 768px) {
+    
+    .ruta-sidebar{
+        display: flex;
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,45 @@
+aside{
+    padding: 10px 10px;
+    background-color: rgb(189, 189, 189);
+}
+
+p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar-link{
+    background-color: rgb(83, 83, 83);
+    padding: 12px 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-top: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 768px) {
+    .md-aside{
+        width: 300px;
+         
+    }
+}
+
+
+@media (min-width: 1024px) {
+    aside{
+        width: 384px;
+    }
+}
+
+@media (min-width:768px) {
+    aside{
+        width: 100%;
+    }
+}
