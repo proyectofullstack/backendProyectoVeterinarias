@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patrick+Hand&family=Quicksand:wght@300&family=Roboto:wght@900&family=Zen+Loop&display=swap');
+
+body {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/abocato-1.appspot.com/o/fondoMarcaagua-01.jpg?alt=media&token=29a308b2-dacd-4601-a840-6f466e172aaa);
+}
+
+input {
+  width: 35%;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(167, 166, 166) !important;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px; 
+}

@@ -1,38 +1,45 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patrick+Hand&family=Quicksand:wght@300&family=Roboto:wght@900&family=Zen+Loop&display=swap');
+
+
 .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;   
+    background-color: white;
+    border-radius: 10px;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
-.outlet{ 
+.outlet {
     padding: 10px;
-    border-radius: 10px;     
+    border-radius: 10px;
     margin: 5px;
+    box-shadow: 0px 0px 15px 5px rgb(202, 202, 202);
 }
 
-form{
-    border: 1px solid rgb(131, 131, 131);
+form {
     border-radius: 10px;
     padding: 15px;
     padding-top: 25px;
     padding-bottom: 25px;
+    text-align: center;
 }
 
-label{
+label {
     margin-top: 15px;
     display: block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 15px;
-    
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
-input{
+
+input {
     width: 95%;
     margin-top: 3px;
     border: 1px solid rgb(167, 166, 166);
@@ -40,56 +47,65 @@ input{
     padding: 10px;
     font-size: 14px;
 }
-.iniciar{
-    margin-top: 15px;
-    background-color: rgb(49, 49, 231);
-    color: white;
-    width:100%;
+
+.iniciar {
+    margin-top: 35px;
+    background-color: #25DBAB;
+    width: 65%;
+    height: 60px;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 28px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 0px solid white !important;
 }
 
-.consulta-div{
-    background-color: white;
+.consulta-div {
     margin-top: 40px;
     border-radius: 8px;
 }
-.consulta-p{
+
+.consulta-p {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
 }
 
-.previewConsulta-div{
+.previewConsulta-div {
     display: flex;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
 }
 
-.previewConsulta-p{
+.previewConsulta-p {
     flex: 1 1 0%;
-    
+
 }
-.obtener-consulta-div{
-     
+
+.obtener-consulta-div {
+
     justify-content: space-between;
 }
-.obtener-consulta-h2{
-   font-family: 'Times New Roman', Times, serif;
+
+.obtener-consulta-h2 {
+    font-family: 'Roboto', sans-serif;
 
 }
 
-.obtener-consulta-p-label{
-   font-size: 20px;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.obtener-consulta-p-label {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
-.obtener-consulta-p{
-    font-family: 'Times New Roman', Times, serif;
+
+.obtener-consulta-p {
+    font-family: 'Roboto', sans-serif;
     color: rgb(48, 48, 49);
 }
-.obtener-consulta-div-mix{
+
+.obtener-consulta-div-mix {
     width: 50%;
     margin: 5px;
     padding: 15px;
@@ -98,26 +114,30 @@ input{
     border: 1px solid rgb(77, 76, 76);
 }
 
-.linckNav{
-    margin-top: 15px;
+.linkNav {
+    margin: 25px 15px 5px 15px;
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-.error{
-    background-color:rgb(228, 33, 33);
+.error {
+    width: 60%;
+    height: 20px;
+    background-color: red;
     color: white;
-    font-size: 13px;
     text-align: center;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid rgb(250, 61, 118);
+    padding: 6px;
+    margin: auto;
     border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.aler{
+.aler {
     background-color: rgb(59, 78, 163);
     color: white;
     font-size: 13px;
@@ -126,6 +146,7 @@ input{
     margin: 5px 0;
     border-radius: 5px;
 }
+
 @media (min-width: 400px) {
     .container {
         max-width: 70%;
@@ -133,7 +154,7 @@ input{
     }
 }
 
- 
+
 
 @media (min-width: 640px) {
     .container {
@@ -141,24 +162,28 @@ input{
         margin-top: 80px
     }
 }
+
 @media (min-width: 768px) {
     .container {
         max-width: 45%;
         margin-top: 80px
     }
 }
+
 @media (min-width: 1024px) {
     .container {
         max-width: 40%;
         margin-top: 80px
     }
 }
+
 @media (min-width: 1280px) {
     .container {
         max-width: 35%;
         margin-top: 80px
     }
 }
+
 @media (min-width: 1536px) {
     .container {
         max-width: 1536px;

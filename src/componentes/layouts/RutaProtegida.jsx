@@ -12,20 +12,32 @@ const RutaProtegida = () => {
   if (cargando) return "Cargando...";
   return (
     <>
-      {auth._id ? 
-      (
-        <div className="headers">
-          <Header />
-          <div className="ruta-sidebar">
-            <SideBar />
-            <div className="outlet-consulta">
-              <Outlet />
+      {auth._id ?
+        (
+          <div className="headers">
+            <Header />
+            <div className="ruta-sidebar">
+              <SideBar />
+              <div className="outlet-consulta">
+                <Outlet />
+              </div>
             </div>
           </div>
-        </div>
-      ) : (
-        <Navigate to="/" />
-      )}
+        ) : (
+          <>
+            {/* <Navigate to="/" /> */}
+            <div className="headers">
+              <Header />
+              <div className="ruta-sidebar">
+                <SideBar />
+                <div className="outlet-consulta">
+                  <Outlet />
+                </div>
+              </div>
+            </div>
+
+          </>
+        )}
     </>
   );
 };

@@ -11,13 +11,13 @@ const FormularioConsultas = () => {
   const [edad, setEdad] = useState("")
   const [fecha, setFecha] = useState("");
   const [sintomas, setSintomas] = useState("");
-  
+
   const params = useParams();
 
   const { mostrarAlerta, alerta, submitConsulta, consulta } = useConsultas();
 
   useEffect(() => {
-    if(consulta.nombrePaciente){
+    if (consulta.nombrePaciente) {
       setId(consulta._id)
       setNombrePaciente(consulta.nombrePaciente)
       setEdad(consulta.edad)
@@ -25,25 +25,25 @@ const FormularioConsultas = () => {
       setSintomas(consulta.sintomas)
     }
   }, [params])
-  
 
-  const handleSubmit = async (e) =>{
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if([nombrePaciente, edad,fecha,sintomas].includes('')){
-        mostrarAlerta({
-          msg:'Todos los campos son obligatorios',
-          error:true
-        })
+    if ([nombrePaciente, edad, fecha, sintomas].includes('')) {
+      mostrarAlerta({
+        msg: 'Todos los campos son obligatorios',
+        error: true
+      })
 
-        return
+      return
     }
     // Pasasr los datos hacia el provider
-     await submitConsulta({id, nombrePaciente, edad,fecha,sintomas })
-     setNombrePaciente('')
-     setEdad('')
-     setFecha('')
-     setSintomas('')
+    await submitConsulta({ id, nombrePaciente, edad, fecha, sintomas })
+    setNombrePaciente('')
+    setEdad('')
+    setFecha('')
+    setSintomas('')
   }
 
   const { msg } = alerta;
@@ -51,32 +51,32 @@ const FormularioConsultas = () => {
 
   return (
     <form className="form-consulta" onSubmit={handleSubmit}>
-      { msg && <Alerta alerta={ alerta }/>}
-      <div  className="">
+      {msg && <Alerta alerta={alerta} />}
+      <div className="">
         <label className="form-label" htmlFor="nombre">Nombre del paciente</label>
         <input
           id="nombre"
           type="text"
-          placeholder="Ingrese el nombre de la consulta"
+          placeholder="Ingrese el nombre de su mascota"
           className="form-input"
           value={nombrePaciente}
           onChange={(e) => setNombrePaciente(e.target.value)}
         />
       </div>
 
-      <div  className="form-div">
+      <div className="form-div">
         <label className="form-label" htmlFor="edad">Edad del paciente</label>
         <input
           id="edad"
           type="text"
-          placeholder="Ingrese la  edad del paciente"
+          placeholder="Ingrese la edad de su mascota"
           className="form-input"
           value={edad}
           onChange={(e) => setEdad(e.target.value)}
         />
       </div>
 
-      <div  className="">
+      <div className="">
         <label className="form-label" htmlFor="fecha">Fecha consulta</label>
         <input
           id="fecha"
@@ -87,11 +87,11 @@ const FormularioConsultas = () => {
         />
       </div>
 
-      <div  className="">
+      <div className="">
         <label className="form-label" htmlFor="sintomas">Sintomas del paciente</label>
         <textarea
           id="sintomas"
-          placeholder="Descripción de los sintomas"
+          placeholder="Por favor, describa los síntomas que tiene su mascota"
           className="form-input"
           value={sintomas}
           onChange={(e) => setSintomas(e.target.value)}
@@ -99,12 +99,12 @@ const FormularioConsultas = () => {
       </div>
 
 
-      
 
-      <input 
-              type="submit" 
-              value={id ? 'Actualizar Consulta' : 'registrar los datos'} 
-              className="form-registrar" />
+
+      <input
+        type="submit"
+        value={id ? 'Actualizar Consulta' : 'registrar los datos'}
+        className="form-registrar" />
 
     </form>
   );
