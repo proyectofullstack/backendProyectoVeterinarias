@@ -1,45 +1,48 @@
-aside{
+aside {
     padding: 10px 10px;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(167, 166, 166);
 }
 
-p{
-    font-size: 20px;
-    font-weight: 700;
+p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
-.sidebar-link{
-    background-color: rgb(83, 83, 83);
+.sidebar-link {
+    background-color: #25DBAB;
     padding: 12px 5px;
     color: white;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     display: block;
     margin-top: 12px;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
 @media (min-width: 768px) {
-    .md-aside{
+    .md-aside {
         width: 300px;
-         
+
     }
 }
 
 
 @media (min-width: 1024px) {
-    aside{
+    aside {
         width: 384px;
     }
 }
 
 @media (min-width:768px) {
-    aside{
+    aside {
         width: 100%;
     }
 }
