@@ -18,5 +18,19 @@ input {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  border-radius: 10px; 
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 35px;
 }

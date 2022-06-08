@@ -47,6 +47,9 @@ const Login = () => {
   const { msg } = alerta;
   return (
     <>
+      <div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/abocato-1.appspot.com/o/TuVetExpress-03.png?alt=media&token=7978c534-5871-4c8d-8ad6-fb935a65ea9b" alt="logo" />
+      </div>
       <h1 className="">Inicio de Sesión</h1>
       {msg && <Alerta alerta={alerta} />}
       <form onSubmit={handleSubmit}>
